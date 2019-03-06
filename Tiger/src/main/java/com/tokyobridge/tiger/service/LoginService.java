@@ -26,7 +26,7 @@ public class LoginService implements LoginServiceIF {
 	 * 로그인 할 때, 회원 테이블에서 회원 존재 유무와 로그인을 도와준다.
 	 * 
 	 * @author 김정헌
-	 * @return List<MemberVO>
+	 * @return MemberVO
 	 * @throws Exception
 	 */
 	@Override
