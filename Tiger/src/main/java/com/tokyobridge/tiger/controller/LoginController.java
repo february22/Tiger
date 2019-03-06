@@ -39,16 +39,15 @@ public class LoginController {
 	public String login(@RequestParam("userId") String userId, @RequestParam("userPw") String userPw,HttpServletResponse response,HttpSession session) throws Exception{
 		
 		logger.info("login");
-		
-		
+
 		MemberVO vo = new MemberVO();
 		vo.setUser_id(userId);
 		vo.setUser_pw(userPw);
 		
 		vo = service.selectMember(vo);
-		session.setAttribute("MemberVO", vo.toString());
+		session.setAttribute("MemberVO", vo != null ? vo.toString() : "値なし");
 		
-		return "main/main";
+		return "/main/main";
 	}
 
 }

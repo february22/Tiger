@@ -23,6 +23,6 @@ public interface MemberDAOIF {
 	 * @return
 	 * @throws Exception
 	 */
-	public List<MemberVO> selectMember(MemberVO vo)throws Exception;
+	public MemberVO selectMember(MemberVO vo)throws Exception;
 	
 }
