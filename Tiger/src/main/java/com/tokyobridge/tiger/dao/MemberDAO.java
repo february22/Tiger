@@ -22,7 +22,7 @@ public class MemberDAO implements MemberDAOIF {
 	@Inject
 	private SqlSession sqlSession;
 	
-	private static String Namespace = "com.tokyobridge.tiger.mapper.memberMapper";
+	private static String Namespace = "com.project.tiger.mapper.memberMapper";
 	
 	/**
 	 * 
@@ -34,7 +34,8 @@ public class MemberDAO implements MemberDAOIF {
 	 * @throws Exception
 	 */
 	@Override
-	public MemberVO selectMember(MemberVO vo) throws Exception {
-		return sqlSession.selectOne(Namespace+".selectMember", vo);
+	public List<MemberVO> selectMember(MemberVO vo) throws Exception {
+		return sqlSession.selectList(Namespace+".selectMember", vo);
 	}
+	String a="";
 }
