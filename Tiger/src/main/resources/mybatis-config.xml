@@ -10,7 +10,7 @@
 		</settings>
 		<!--  2018.12.02 김 정헌 -->
 		<typeAliases>
-			<typeAlias type="com.tokyobridge.tiger.vo.MemberVO" alias="MemberVO"/>
+			<typeAlias type="com.tokyobridge.tiger.vo.MemberVO" alias="memberVO"/>
 		</typeAliases>
 
     </configuration>
