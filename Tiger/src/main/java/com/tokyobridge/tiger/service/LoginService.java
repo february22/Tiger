@@ -31,12 +31,8 @@ public class LoginService implements LoginServiceIF {
 	 */
 	@Override
 	public MemberVO selectMember(MemberVO vo) throws Exception {
-
-		List<MemberVO> list = dao.selectMember(vo);
-		if(list == null && list.size()<0) {
-			return null;
-		}
-		return list.get(0);
+		vo = dao.selectMember(vo);
+		return vo;
 	}
 
 }
